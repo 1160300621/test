@@ -3,18 +3,6 @@
   <groupId>Lab1-1160300621</groupId>
   <artifactId>Lab1-1160300621</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <dependencies>   	
-    <dependency>
-		<groupId>junit</groupId>
-		<artifactId>junit</artifactId>
-		<version>4.12</version>
-	</dependency>
-	<dependency>
-			<groupId>org.glassfish</groupId>
-			<artifactId>javax.json</artifactId>
-			<version>1.0</version>
-	</dependency>
-    </dependencies>  
   <build>
     <sourceDirectory>src</sourceDirectory>
     <testSourceDirectory>test</testSourceDirectory>
@@ -50,4 +38,16 @@
       </plugin>
     </plugins>
   </build>
+  <dependencies>   	
+    <dependency>
+		<groupId>junit</groupId>
+		<artifactId>junit</artifactId>
+		<version>4.12</version>
+	</dependency>
+	<dependency>
+			<groupId>org.glassfish</groupId>
+			<artifactId>javax.json</artifactId>
+			<version>1.0</version>
+	</dependency>
+    </dependencies>  
 </project>
