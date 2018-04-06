@@ -16,7 +16,7 @@ public class FriendshipGraphTest {
 
 
 	@Test
-	void testAddVertex() {
+	public void testAddVertex() {
 		FriendshipGraph graph = new FriendshipGraph();
 		Person a = new Person("a");
 		Person b = new Person("b");
@@ -36,7 +36,7 @@ public class FriendshipGraphTest {
 	}
 
 	@Test
-	void testAddEdge() {
+	public void testAddEdge() {
 		FriendshipGraph graph = new FriendshipGraph();
 		Person a = new Person("a");
 		Person b = new Person("b");
@@ -79,7 +79,7 @@ public class FriendshipGraphTest {
 
 
 	@Test
-	void testGetDistance() {
+	public void testGetDistance() {
 		FriendshipGraph graph = new FriendshipGraph();
 		Person a = new Person("a");
 		Person b = new Person("b");
