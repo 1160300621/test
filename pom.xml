@@ -5,11 +5,16 @@
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>   
        <dependency>  
-        <groupId>junit</groupId>  
-		<artifactId>junit</artifactId>  
-		<version>4.11</version>  
-		<scope>test</scope>  
+			<groupId>junit</groupId>  
+			<artifactId>junit</artifactId>  
+			<version>4.12</version>  
+			<scope>test</scope>  
         </dependency>    
+		<dependency>
+			<groupId>org.glassfish</groupId>
+			<artifactId>javax.json</artifactId>
+			<version>1.0</version>
+		</dependency>
     </dependencies>  
   <build>
     <sourceDirectory>src</sourceDirectory>
