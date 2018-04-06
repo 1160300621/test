@@ -29,7 +29,7 @@ public class FriendshipGraph {
 		person.setnum(n);
 		for (int i=0;i<n;i++) {
 			if (person.getname()==Name.get(i)) {
-				System.err.println("存在相同的名字");
+				System.err.println("the same name");
 				System.exit(0);
 			}
 		}

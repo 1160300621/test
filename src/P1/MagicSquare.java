@@ -24,7 +24,7 @@ public class MagicSquare {
 		try {
 			reader = new InputStreamReader(new FileInputStream(file));
 		} catch (FileNotFoundException e) {
-			System.out.println(fileName + ":没有找到文件	false");
+			System.out.println(fileName + "false");
 			return false;
 		}
 		br = new BufferedReader(reader);
@@ -38,19 +38,19 @@ public class MagicSquare {
 					handle = number[i];
 					a[row][i] = Integer.valueOf(number[i]);
 					if (a[row][i] <= 0) {
-						System.out.println(fileName + ":矩阵包含不是正整数的数	false");
+						System.out.println(fileName + "false");
 						return false;
 					}
 				}
 				row++;
 			}
 			if (row != column[0]) {
-				System.out.println(fileName + ":矩阵不是方阵	false");
+				System.out.println(fileName + "false");
 				return false;
 			}
 			for (int i = 1; i < row; i++) {
 				if (column[i] != column[0]) {
-					System.out.println(fileName + ":不是一个矩阵	false");
+					System.out.println(fileName + "false");
 					return false;
 				}
 			}
@@ -63,7 +63,7 @@ public class MagicSquare {
 					temp += a[i][j];
 				}
 				if (temp != sum) {
-					System.out.println(fileName + ":和不相等	false");
+					System.out.println(fileName + "false");
 					return false;
 				}
 			}
@@ -73,7 +73,7 @@ public class MagicSquare {
 					temp += a[j][i];
 				}
 				if (sum != temp) {
-					System.out.println(fileName + ":和不相等	false");
+					System.out.println(fileName + "false");
 					return false;
 				}
 			}
@@ -83,11 +83,11 @@ public class MagicSquare {
 				temp2 += a[i][row - i - 1];
 			}
 			if (sum != temp1 || sum != temp2) {
-				System.out.println(fileName + ":和不相等	false");
+				System.out.println(fileName + "false");
 				return false;
 			}
 		} catch (IOException e) {
-			System.out.println(fileName + ":出现输入输出异常	false");
+			System.out.println(fileName + ":false");
 			return false;
 		} catch (NumberFormatException e) {
 			for (int i = 0; i < handle.length(); i++) {
@@ -97,16 +97,16 @@ public class MagicSquare {
 						if (!flag)
 							flag = true;
 						else {
-							System.out.println(fileName + ":不是以\\t分割	false");
+							System.out.println(fileName + "false");
 							return false;
 						}
 					}
 				} else {
-					System.out.println(fileName + ":不是以\\t分割	false");
+					System.out.println(fileName + "false");
 					return false;
 				}
 			}
-			System.out.println(fileName + ":矩阵包含不是正整数的数	false");
+			System.out.println(fileName + "false");
 			return false;
 		}
 		return true;
@@ -157,11 +157,11 @@ public class MagicSquare {
 		}
 		catch(ArrayIndexOutOfBoundsException e)
 		{
-			System.out.println("6.txt:矩阵生成过程中数组越界，生成矩阵失败  false");
+			System.out.println("6.txt:false");
 			return false;
 		}
 		catch(NegativeArraySizeException e) {
-			System.out.println("6.txt:输入的n是负数，生成矩阵失败 false");
+			System.out.println("6.txt:false");
 			return false;
 		}
 		return true;
@@ -173,15 +173,15 @@ public class MagicSquare {
 			boolean judge;
 			judge = isLegalMagicSquare(fileName);
 			if (judge)
-				System.out.println(fileName + ":是一个MagicSqure	true");
+				System.out.println(fileName + "true");
 		}
 		Scanner in = new Scanner(System.in);
-		System.out.println("请输入正整数n生成6.txt");
+		System.out.println("6.txt");
 		int n = in.nextInt();
 		boolean flag=generateMagicSquare(n);
 		boolean judge = isLegalMagicSquare("6.txt");
 		if (judge&&flag)
-			System.out.println("\n6.txt:是一个MagicSqure	true");
+			System.out.println("\n6.txt:MagicSqure	true");
 		in.close();
 	}
 
