@@ -4,8 +4,8 @@ import static org.junit.Assert.assertEquals;
 
 import java.util.ArrayList;
 
+import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 
 import P3.FriendshipGraph;
 import P3.Person;
