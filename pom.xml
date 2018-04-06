@@ -3,13 +3,7 @@
   <groupId>Lab1-1160300621</groupId>
   <artifactId>Lab1-1160300621</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <dependencies>   
-    <dependency>
-		<groupId>junit</groupId>
-		<artifactId>junit</artifactId>
-		<version>4.12</version>
-		<scope>test</scope> 
-    </dependency>		
+  <dependencies>   	
     <dependency>
 		<groupId>junit</groupId>
 		<artifactId>junit</artifactId>
