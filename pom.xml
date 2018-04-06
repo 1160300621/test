@@ -38,4 +38,12 @@
       </plugin>
     </plugins>
   </build>
+   <dependencies>   
+       <dependency>  
+        <groupId>junit</groupId>  
+		<artifactId>junit</artifactId>  
+		<version>5.0.0</version>  
+		<scope>test</scope>  
+        </dependency>    
+    </dependencies>  
 </project>
