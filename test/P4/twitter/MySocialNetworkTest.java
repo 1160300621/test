@@ -62,17 +62,17 @@ public class MySocialNetworkTest {
         assertEquals(followpeople, followsGraph);
     }
      
-    @Test
-    public void testGuessFollowsGraphTheSameTag() {
-    	Map<String, Set<String>> followsGraph = SocialNetwork.guessFollowsGraph(Arrays.asList(tweet1,tweet2,tweet3,tweet4));
-        Map<String, Set<String>> followpeople = new HashMap<>();
-        followpeople.put("a", new HashSet<String>(Arrays.asList("b","c","d")));
-        followpeople.put("b", new HashSet<String>(Arrays.asList()));
-        followpeople.put("c", new HashSet<String>(Arrays.asList("a","b")));
-        followpeople.put("d", new HashSet<String>(Arrays.asList("a")));
-        
-        assertEquals(followpeople, followsGraph);
-    }
+//    @Test
+//    public void testGuessFollowsGraphTheSameTag() {
+//    	Map<String, Set<String>> followsGraph = SocialNetwork.guessFollowsGraph(Arrays.asList(tweet1,tweet2,tweet3,tweet4));
+//        Map<String, Set<String>> followpeople = new HashMap<>();
+//        followpeople.put("a", new HashSet<String>(Arrays.asList("b","c","d")));
+//        followpeople.put("b", new HashSet<String>(Arrays.asList()));
+//        followpeople.put("c", new HashSet<String>(Arrays.asList("a","b")));
+//        followpeople.put("d", new HashSet<String>(Arrays.asList("a")));
+//        
+//        assertEquals(followpeople, followsGraph);
+//    }
     
     @Test
     public void testGuessFollowsGraphTheSameTagInComplex() {
