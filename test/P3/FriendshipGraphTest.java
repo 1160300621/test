@@ -1,20 +1,18 @@
 
 
-import static org.junit.Assert.assertEquals;
-
+import static org.junit.Assert.*;
 import java.util.ArrayList;
 
 import org.junit.Test;
-import org.junit.jupiter.api.BeforeEach;
 
 import P3.FriendshipGraph;
 import P3.Person;
 
 public class FriendshipGraphTest {
 
-	@BeforeEach
-	void setUp() throws Exception {
-	}
+//	@BeforeEach
+//	void setUp() throws Exception {
+//	}
 
 
 	@Test
